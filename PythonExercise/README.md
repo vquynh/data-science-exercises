@@ -1,9 +1,6 @@
 # Data Science (BHT MIM 20 S22)
 ## Python Exercise
-
-**Professor:** Stefan Edlich
-
-**Student:** Thi Viet Quynh Nguyen
+> The idea is: DevEnvironment + your passion!
 
 ### IDE Setup
 - Chosen IDE: [PyCharm](https://www.jetbrains.com/help/pycharm/2022.1/quick-start-guide.html) 
