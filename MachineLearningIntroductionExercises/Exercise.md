@@ -2,8 +2,7 @@
 # Machine Learning Introduction Exercises
 
 
-
-1. According to the paper [A Few Useful Things to Know about Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf) by Pedro Domingos 
+### 1. Read the paper [A Few Useful Things to Know about Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf) by Pedro Domingos 
 
 - What is the meaning of generalization?
 > According to the paper, generalization is the goal of machine learning. 
@@ -40,7 +39,7 @@ learner that figures out how best to combine them.
  - What is accuracy in data science?
 > According to the article, accuracy means that the hypotheses make the correct generalization and not that the hypotheses are simple.
 
-2. Describe the core idea of gradient descent in a few paragraphs. Pictures, equations or anything you need is also fine. 
+### 2. Describe the core idea of gradient descent in a few paragraphs. Pictures, equations or anything you need is also fine. 
 - Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of 
 the steepest descent as defined by the negative of the gradient. In machine learning, gradient descent is used to update model's parameters. 
 Parameters refer to `coefficients` in Linear Regression and `weights` in neural networks.
@@ -58,7 +57,7 @@ The cost function has its own curve and its own gradients. The slope of this cur
 ![Calculation example](eq.png)
 [Image source](https://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html#step-by-step)
 
-3. Learn about Bayesian Statistics / Algorithm from this video [1] or find a better resource. Tell me what you learned including the best example you came over. 
+### 3. Learn about Bayesian Statistics and example 
 - Bayesian statistics is a mathematical procedure that applies probabilities to statistical problems. 
 It provides people the tools to update their beliefs in the evidence of new data.
 - Probability of an event A given B equals the probability of B and A happening together divided by the probability of B.
