@@ -16,7 +16,7 @@ edge [fontname="helvetica"] ;
 4 -> 6 ;
 7 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = Buys_computer=No", fillcolor="#399de5"] ;
 6 -> 7 ;
-8 [label="Student <= 0.5\ngini = 0.444\nsamples = 3\nvalue = [2, 1]\nclass = Buys_computer=Yes", fillcolor="#f2c09c"] ;
+8 [label="Income <= 0.5\ngini = 0.444\nsamples = 3\nvalue = [2, 1]\nclass = Buys_computer=Yes", fillcolor="#f2c09c"] ;
 6 -> 8 ;
 9 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Buys_computer=Yes", fillcolor="#e58139"] ;
 8 -> 9 ;
