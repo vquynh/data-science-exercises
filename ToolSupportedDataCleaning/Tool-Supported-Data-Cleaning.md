@@ -10,14 +10,15 @@
 ## Exercise 2
 > Load the [Grid_Disruption_00_14_standardized - Grid_Disruption_00_14_standardized.csv](https://www.kaggle.com/datasets/autunno/15-years-of-power-outages?select=Grid_Disruption_00_14_standardized+-+Grid_Disruption_00_14_standardized.csv) Dataset from Kaggle: 15 YEARS OF POWER OUTAGES. 
 ### The errors
+Trifacta Wrangler highlighted the columns with mismatched data with red color
 ![initial](initial.png)
+Having a closer look at the highlighted columns, we can see the errors:
 - `Time Event Began` and `Time of Restoration` have invalid datetime values such as "Midnight", "Ongoing", "Evening", "NA"...
 - `Time Event Began` and `Time of Restoration` have different datetime format ("a.m." and "AM")
 - `Date of Restoration` has invalid date values such as "NA", "Ongoing", "Unknown"
 ### How to clean this file
-![clean](clean.png)
 
-#### Recipe
+#### This is the recipe to clean this file
 ```
 replacepatterns col: {Time Event Began},{Time of Restoration} with: '.' on: '. ' global: true
 replacepatterns col: {Time Event Began},{Time of Restoration} with: '.' on: '..' global: true
@@ -42,3 +43,6 @@ filter type: custom rowType: single row: ISMISMATCHED({Date of Restoration}, ['D
 filter type: custom rowType: single row: ISMISSING([{Time of Restoration}]) action: Delete
 filter type: custom rowType: single row: ISMISSING([{Time of Restoration}]) action: Delete
 ```
+
+#### Here is the result
+![clean](clean.png)
